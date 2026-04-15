@@ -1,0 +1,940 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/8728c7fdb0e0b3c78180e1fb/w/70d590d987c43934e5d14436/e/c77dbd6d3fbd22e2e0636f89 -->
+<robot name="openarm_right">
+  <!-- Link hfsb6_6060_750_1_step -->
+  <link name="hfsb6_6060_750_1_step">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part j1_b_2_step -->
+    <visual>
+      <origin xyz="1e-12 3e-12 -0.008" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j1_b_2_step.stl"/>
+      </geometry>
+      <material name="j1_b_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 3e-12 -0.008" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j1_b_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hfsb6_6060_750_1_step -->
+    <visual>
+      <origin xyz="-4e-12 -3e-12 0.758" rpy="-3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/hfsb6_6060_750_1_step.stl"/>
+      </geometry>
+      <material name="hfsb6_6060_750_1_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4e-12 -3e-12 0.758" rpy="-3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/hfsb6_6060_750_1_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dm_j8009p_2_step -->
+    <visual>
+      <origin xyz="1e-12 3e-12 -0.008" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j8009p_2_step.stl"/>
+      </geometry>
+      <material name="dm_j8009p_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 3e-12 -0.008" rpy="0 0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j8009p_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j1_a_1_step -->
+    <visual>
+      <origin xyz="1e-12 3e-12 -0.008" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j1_a_1_step.stl"/>
+      </geometry>
+      <material name="j1_a_1_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 3e-12 -0.008" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j1_a_1_step.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link dm_j8009p_2_step_1 -->
+  <link name="dm_j8009p_2_step_1">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part dm_j8009p_2_step_1 -->
+    <visual>
+      <origin xyz="1e-12 0.697 0.0925" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j8009p_2_step_1.stl"/>
+      </geometry>
+      <material name="dm_j8009p_2_step_1_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.697 0.0925" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j8009p_2_step_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j1_e_1_step -->
+    <visual>
+      <origin xyz="1e-12 0.697 0.0925" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j1_e_1_step.stl"/>
+      </geometry>
+      <material name="j1_e_1_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.697 0.0925" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j1_e_1_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j1_d_1_step -->
+    <visual>
+      <origin xyz="1e-12 0.697 0.0925" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j1_d_1_step.stl"/>
+      </geometry>
+      <material name="j1_d_1_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.697 0.0925" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j1_d_1_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j1_c_1_step -->
+    <visual>
+      <origin xyz="1e-12 0.697 0.0925" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j1_c_1_step.stl"/>
+      </geometry>
+      <material name="j1_c_1_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.697 0.0925" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j1_c_1_step.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link j2_b_2_step -->
+  <link name="j2_b_2_step">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part j2_a_1_step -->
+    <visual>
+      <origin xyz="0.1525 -0.697 0.0301" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j2_a_1_step.stl"/>
+      </geometry>
+      <material name="j2_a_1_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1525 -0.697 0.0301" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j2_a_1_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j2_c_2_step -->
+    <visual>
+      <origin xyz="0.1525 -0.697 0.0301" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j2_c_2_step.stl"/>
+      </geometry>
+      <material name="j2_c_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1525 -0.697 0.0301" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j2_c_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j2_b_2_step -->
+    <visual>
+      <origin xyz="0.1525 -0.697 0.0301" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j2_b_2_step.stl"/>
+      </geometry>
+      <material name="j2_b_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1525 -0.697 0.0301" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j2_b_2_step.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link dm_j4340_2_step -->
+  <link name="dm_j4340_2_step">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part dm_j4340p_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.1525 -0.63075" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j4340p_2_step.stl"/>
+      </geometry>
+      <material name="dm_j4340p_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.1525 -0.63075" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j4340p_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fl6803zz_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.1525 -0.63075" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/fl6803zz_2_step.stl"/>
+      </geometry>
+      <material name="fl6803zz_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.1525 -0.63075" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/fl6803zz_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j4_a_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.1525 -0.63075" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j4_a_2_step.stl"/>
+      </geometry>
+      <material name="j4_a_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.1525 -0.63075" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j4_a_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dm_j4340_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.1525 -0.63075" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j4340_2_step.stl"/>
+      </geometry>
+      <material name="dm_j4340_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.1525 -0.63075" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j4340_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j4_b_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.1525 -0.63075" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j4_b_2_step.stl"/>
+      </geometry>
+      <material name="j4_b_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.1525 -0.63075" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j4_b_2_step.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link dm_j4310_1_2_step -->
+  <link name="dm_j4310_1_2_step">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part j4_d_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.477 0.18405" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j4_d_2_step.stl"/>
+      </geometry>
+      <material name="j4_d_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.477 0.18405" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j4_d_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j4_c_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.477 0.18405" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j4_c_2_step.stl"/>
+      </geometry>
+      <material name="j4_c_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.477 0.18405" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j4_c_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dm_j4310_1_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.477 0.18405" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j4310_1_2_step.stl"/>
+      </geometry>
+      <material name="dm_j4310_1_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.477 0.18405" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j4310_1_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j4_e_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.477 0.18405" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j4_e_2_step.stl"/>
+      </geometry>
+      <material name="j4_e_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.477 0.18405" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j4_e_2_step.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link j6_a_3_step -->
+  <link name="j6_a_3_step">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part j6_d_3_step -->
+    <visual>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j6_d_3_step.stl"/>
+      </geometry>
+      <material name="j6_d_3_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j6_d_3_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dm_j4310_1_2_step_1 -->
+    <visual>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j4310_1_2_step_1.stl"/>
+      </geometry>
+      <material name="dm_j4310_1_2_step_1_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j4310_1_2_step_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j6_b_3_step -->
+    <visual>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j6_b_3_step.stl"/>
+      </geometry>
+      <material name="j6_b_3_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j6_b_3_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j5_a_3_step -->
+    <visual>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j5_a_3_step.stl"/>
+      </geometry>
+      <material name="j5_a_3_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j5_a_3_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j6_a_3_step -->
+    <visual>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j6_a_3_step.stl"/>
+      </geometry>
+      <material name="j6_a_3_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j6_a_3_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j6_c_right_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j6_c_right_2_step.stl"/>
+      </geometry>
+      <material name="j6_c_right_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.15255 -0.3815" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j6_c_right_2_step.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link j7_e_2_step -->
+  <link name="j7_e_2_step">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part j7_e_2_step -->
+    <visual>
+      <origin xyz="0.15255 0.336 0.0172" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j7_e_2_step.stl"/>
+      </geometry>
+      <material name="j7_e_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.15255 0.336 0.0172" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j7_e_2_step.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from j6_a_3_step to j7_e_2_step -->
+  <joint name="r_wrist_roll" type="revolute">
+    <origin xyz="0.0172 -0 -0.0455" rpy="-1.5708 -0 1.5708"/>
+    <parent link="j6_a_3_step"/>
+    <child link="j7_e_2_step"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.785398" upper="0.785398"/>
+  </joint>
+  <!-- Link dm_j4310_1_2_step_2 -->
+  <link name="dm_j4310_1_2_step_2">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part fl6700zz_2_step -->
+    <visual>
+      <origin xyz="0.15255 -0.261 -0.0343" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/fl6700zz_2_step.stl"/>
+      </geometry>
+      <material name="fl6700zz_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.15255 -0.261 -0.0343" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/fl6700zz_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dm_j4310_1_2_step_2 -->
+    <visual>
+      <origin xyz="-0.15255 0.261 -0.0343" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j4310_1_2_step_2.stl"/>
+      </geometry>
+      <material name="dm_j4310_1_2_step_2_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.15255 0.261 -0.0343" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/dm_j4310_1_2_step_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j7_b_2_step -->
+    <visual>
+      <origin xyz="-0.15255 -0.261 -0.0343" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j7_b_2_step.stl"/>
+      </geometry>
+      <material name="j7_b_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.15255 -0.261 -0.0343" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j7_b_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j7_a_2_step -->
+    <visual>
+      <origin xyz="-0.15255 0.261 -0.0343" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j7_a_2_step.stl"/>
+      </geometry>
+      <material name="j7_a_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.15255 0.261 -0.0343" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j7_a_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j7_c_2_step -->
+    <visual>
+      <origin xyz="-0.15255 0.261 -0.0343" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j7_c_2_step.stl"/>
+      </geometry>
+      <material name="j7_c_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.15255 0.261 -0.0343" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j7_c_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fl6700zz_2_step_1 -->
+    <visual>
+      <origin xyz="0.15255 -0.261 -0.0343" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/fl6700zz_2_step_1.stl"/>
+      </geometry>
+      <material name="fl6700zz_2_step_1_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.15255 -0.261 -0.0343" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/fl6700zz_2_step_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j7_b_2_step_2 -->
+    <visual>
+      <origin xyz="-0.15245 0.261 -0.0343" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j7_b_2_step_2.stl"/>
+      </geometry>
+      <material name="j7_b_2_step_2_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.15245 0.261 -0.0343" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j7_b_2_step_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link gripper_base -->
+  <link name="gripper_base">
+    <inertial>
+      <origin xyz="0.000529526 0.0844612 0.015076" rpy="0 0 0"/>
+      <mass value="0.213224"/>
+      <inertia ixx="0.000384882" ixy="6.86913e-07" ixz="3.22364e-06" iyy="0.000313838" iyz="-2.49811e-05" izz="0.0001816"/>
+    </inertial>
+    <!-- Part feetech_sts3215__configuration_default -->
+    <visual>
+      <origin xyz="0.00939992 0.0819874 -0.0103343" rpy="0 -0.174541 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/feetech_sts3215__configuration_default.stl"/>
+      </geometry>
+      <material name="feetech_sts3215__configuration_default_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00939992 0.0819874 -0.0103343" rpy="0 -0.174541 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/feetech_sts3215__configuration_default.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j8_b_2_step -->
+    <visual>
+      <origin xyz="-9.99999e-07 0.260999 0.17305" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j8_b_2_step.stl"/>
+      </geometry>
+      <material name="j8_b_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-9.99999e-07 0.260999 0.17305" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j8_b_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part gripper_base -->
+    <visual>
+      <origin xyz="-0.0252001 0.127739 -0.01538" rpy="-1.5708 1.57079 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/gripper_base.stl"/>
+      </geometry>
+      <material name="gripper_base_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0252001 0.127739 -0.01538" rpy="-1.5708 1.57079 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/gripper_base.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part b0404 -->
+    <visual>
+      <origin xyz="0.0687999 0.0535004 0.0260817" rpy="3.14159 1.57079 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/b0404.stl"/>
+      </geometry>
+      <material name="b0404_material">
+        <color rgba="0.372549 0.654902 0.239216 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0687999 0.0535004 0.0260817" rpy="3.14159 1.57079 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/b0404.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part camera_imu_support -->
+    <visual>
+      <origin xyz="0.0247999 0.122827 -0.00431896" rpy="-1.5708 1.57079 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/camera_imu_support.stl"/>
+      </geometry>
+      <material name="camera_imu_support_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0247999 0.122827 -0.00431896" rpy="-1.5708 1.57079 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/camera_imu_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part j8_a_2_step -->
+    <visual>
+      <origin xyz="1e-12 0.261 0.17305" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j8_a_2_step.stl"/>
+      </geometry>
+      <material name="j8_a_2_step_material">
+        <color rgba="0.792157 0.819608 0.933333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1e-12 0.261 0.17305" rpy="1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/j8_a_2_step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part backplate -->
+    <visual>
+      <origin xyz="-0.0250001 0.127739 -0.01538" rpy="-1.5708 1.57079 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/backplate.stl"/>
+      </geometry>
+      <material name="backplate_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0250001 0.127739 -0.01538" rpy="-1.5708 1.57079 -1.5708"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/backplate.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame openarm_fix (dummy link + fixed joint) -->
+  <link name="openarm_fix">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="openarm_fix_frame" type="fixed">
+    <origin xyz="-0 0.0495 0.0205" rpy="1.5708 1.5708 0"/>
+    <parent link="gripper_base"/>
+    <child link="openarm_fix"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Frame camera (dummy link + fixed joint) -->
+  <link name="camera">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="camera_frame" type="fixed">
+    <origin xyz="0.0687999 0.0662004 0.0260816" rpy="3.14159 1.57079 -1.5708"/>
+    <parent link="gripper_base"/>
+    <child link="camera"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Link feetech_sts3215__configuration_default -->
+  <link name="feetech_sts3215__configuration_default">
+    <inertial>
+      <origin xyz="0.0182592 -0.0259026 0.0175524" rpy="0 0 0"/>
+      <mass value="0.101487"/>
+      <inertia ixx="5.99713e-05" ixy="6.78604e-06" ixz="-4.30903e-07" iyy="4.50716e-05" iyz="1.10027e-06" izz="3.99848e-05"/>
+    </inertial>
+    <!-- Part proximal_side -->
+    <visual>
+      <origin xyz="-0.00297594 -0.0204326 0.0435" rpy="-3.14159 -0 -0.174533"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/proximal_side.stl"/>
+      </geometry>
+      <material name="proximal_side_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00297594 -0.0204326 0.0435" rpy="-3.14159 -0 -0.174533"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/proximal_side.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part proximal_bottom -->
+    <visual>
+      <origin xyz="-0.00297594 -0.0204326 0.0435" rpy="-3.14159 0 -0.174533"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/proximal_bottom.stl"/>
+      </geometry>
+      <material name="proximal_bottom_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00297594 -0.0204326 0.0435" rpy="-3.14159 0 -0.174533"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/proximal_bottom.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part feetech_sts3215__configuration_default_2 -->
+    <visual>
+      <origin xyz="0.0122498 -0.0212176 0.0089" rpy="-1.5708 0 2.0944"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/feetech_sts3215__configuration_default.stl"/>
+      </geometry>
+      <material name="feetech_sts3215__configuration_default_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0122498 -0.0212176 0.0089" rpy="-1.5708 0 2.0944"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/feetech_sts3215__configuration_default.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part proximal_top -->
+    <visual>
+      <origin xyz="-0.00297594 -0.0204326 0.0435" rpy="3.14159 -0 -0.174533"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/proximal_top.stl"/>
+      </geometry>
+      <material name="proximal_top_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00297594 -0.0204326 0.0435" rpy="3.14159 -0 -0.174533"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/proximal_top.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link distal -->
+  <link name="distal">
+    <inertial>
+      <origin xyz="-0.0288978 0.00403421 0.0180018" rpy="0 0 0"/>
+      <mass value="0.0471678"/>
+      <inertia ixx="1.19203e-05" ixy="2.06538e-06" ixz="3.61884e-07" iyy="1.88956e-05" iyz="1.38375e-07" izz="1.16157e-05"/>
+    </inertial>
+    <!-- Part distal -->
+    <visual>
+      <origin xyz="0.0337928 0.0127932 0.0435" rpy="-3.14159 -0 -2.26893"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/distal.stl"/>
+      </geometry>
+      <material name="distal_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0337928 0.0127932 0.0435" rpy="-3.14159 -0 -2.26893"/>
+      <geometry>
+        <mesh filename="package://openarm_gripette_description/distal.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from feetech_sts3215__configuration_default to distal -->
+  <joint name="distal" type="revolute">
+    <origin xyz="0.0249998 -0.0433013 -0.00055" rpy="0 0 2.0944"/>
+    <parent link="feetech_sts3215__configuration_default"/>
+    <child link="distal"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-2.0944" upper="0"/>
+  </joint>
+  <!-- Joint from gripper_base to feetech_sts3215__configuration_default -->
+  <joint name="proximal" type="revolute">
+    <origin xyz="0.0177499 0.1071 -0.0147625" rpy="1.5708 1.39626 -1.5708"/>
+    <parent link="gripper_base"/>
+    <child link="feetech_sts3215__configuration_default"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.57079" upper="7.64992e-06"/>
+  </joint>
+  <!-- Joint from dm_j4310_1_2_step_2 to gripper_base -->
+  <joint name="r_wrist_pitch" type="revolute">
+    <origin xyz="0.0205 -0 -0.0343" rpy="0 -1.5708 0"/>
+    <parent link="dm_j4310_1_2_step_2"/>
+    <child link="gripper_base"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Joint from j6_a_3_step to dm_j4310_1_2_step_2 -->
+  <joint name="r_wrist_roll_mimic" type="revolute">
+    <origin xyz="0.0343 -0 -0.1205" rpy="-1.5708 0 -1.5708"/>
+    <parent link="j6_a_3_step"/>
+    <child link="dm_j4310_1_2_step_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <mimic joint="r_wrist_roll" multiplier="-1.0"/>
+  </joint>
+  <!-- Joint from dm_j4310_1_2_step to j6_a_3_step -->
+  <joint name="r_wrist_yaw" type="revolute">
+    <origin xyz="-0 0.0955 0.0315" rpy="1.5708 -0 0"/>
+    <parent link="dm_j4310_1_2_step"/>
+    <child link="j6_a_3_step"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Joint from dm_j4340_2_step to dm_j4310_1_2_step -->
+  <joint name="r_elbow" type="revolute">
+    <origin xyz="0 -0.03155 -0.15375" rpy="-1.5708 -0 -0"/>
+    <parent link="dm_j4340_2_step"/>
+    <child link="dm_j4310_1_2_step"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-2.44346" upper="0"/>
+  </joint>
+  <!-- Joint from j2_b_2_step to dm_j4340_2_step -->
+  <joint name="r_arm_yaw" type="revolute">
+    <origin xyz="-0 -0.06625 0.0301" rpy="-1.5708 -1.5708 0"/>
+    <parent link="j2_b_2_step"/>
+    <child link="dm_j4340_2_step"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Joint from dm_j8009p_2_step_1 to j2_b_2_step -->
+  <joint name="r_arm_roll" type="revolute">
+    <origin xyz="-0.0301 0 -0.06" rpy="-3.14159 -1.5708 0"/>
+    <parent link="dm_j8009p_2_step_1"/>
+    <child link="j2_b_2_step"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.31613" upper="0.174533"/>
+  </joint>
+  <!-- Joint from hfsb6_6060_750_1_step to dm_j8009p_2_step_1 -->
+  <joint name="r_arm_pitch" type="revolute">
+    <origin xyz="-0 -0.0925 0.689" rpy="-1.5708 0 -0"/>
+    <parent link="hfsb6_6060_750_1_step"/>
+    <child link="dm_j8009p_2_step_1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-2.99999" upper="0.999986"/>
+  </joint>
+</robot>
