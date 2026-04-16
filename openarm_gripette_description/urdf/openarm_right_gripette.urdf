@@ -491,7 +491,7 @@
     </collision>
   </link>
   <!-- Joint from j6_a_3_step to j7_e_2_step -->
-  <joint name="r_wrist_roll" type="revolute">
+  <joint name="openarm_joint6" type="revolute">
     <origin xyz="0.0172 -0 -0.0455" rpy="-1.5708 -0 1.5708"/>
     <parent link="j6_a_3_step"/>
     <child link="j7_e_2_step"/>
@@ -881,7 +881,7 @@
     <limit effort="10" velocity="10" lower="-1.57079" upper="7.64992e-06"/>
   </joint>
   <!-- Joint from dm_j4310_1_2_step_2 to gripper_base -->
-  <joint name="r_wrist_pitch" type="revolute">
+  <joint name="openarm_joint7" type="revolute">
     <origin xyz="0.0205 -0 -0.0343" rpy="0 -1.5708 0"/>
     <parent link="dm_j4310_1_2_step_2"/>
     <child link="gripper_base"/>
@@ -889,16 +889,16 @@
     <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
   </joint>
   <!-- Joint from j6_a_3_step to dm_j4310_1_2_step_2 -->
-  <joint name="r_wrist_roll_mimic" type="revolute">
+  <joint name="openarm_joint6_mimic" type="revolute">
     <origin xyz="0.0343 -0 -0.1205" rpy="-1.5708 0 -1.5708"/>
     <parent link="j6_a_3_step"/>
     <child link="dm_j4310_1_2_step_2"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
-    <mimic joint="r_wrist_roll" multiplier="-1.0"/>
+    <mimic joint="openarm_joint6" multiplier="-1.0"/>
   </joint>
   <!-- Joint from dm_j4310_1_2_step to j6_a_3_step -->
-  <joint name="r_wrist_yaw" type="revolute">
+  <joint name="openarm_joint5" type="revolute">
     <origin xyz="-0 0.0955 0.0315" rpy="1.5708 -0 0"/>
     <parent link="dm_j4310_1_2_step"/>
     <child link="j6_a_3_step"/>
@@ -906,7 +906,7 @@
     <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
   </joint>
   <!-- Joint from dm_j4340_2_step to dm_j4310_1_2_step -->
-  <joint name="r_elbow" type="revolute">
+  <joint name="openarm_joint4" type="revolute">
     <origin xyz="0 -0.03155 -0.15375" rpy="-1.5708 -0 -0"/>
     <parent link="dm_j4340_2_step"/>
     <child link="dm_j4310_1_2_step"/>
@@ -914,7 +914,7 @@
     <limit effort="10" velocity="10" lower="-2.44346" upper="0"/>
   </joint>
   <!-- Joint from j2_b_2_step to dm_j4340_2_step -->
-  <joint name="r_arm_yaw" type="revolute">
+  <joint name="openarm_joint3" type="revolute">
     <origin xyz="-0 -0.06625 0.0301" rpy="-1.5708 -1.5708 0"/>
     <parent link="j2_b_2_step"/>
     <child link="dm_j4340_2_step"/>
@@ -922,7 +922,7 @@
     <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
   </joint>
   <!-- Joint from dm_j8009p_2_step_1 to j2_b_2_step -->
-  <joint name="r_arm_roll" type="revolute">
+  <joint name="openarm_joint2" type="revolute">
     <origin xyz="-0.0301 0 -0.06" rpy="-3.14159 -1.5708 0"/>
     <parent link="dm_j8009p_2_step_1"/>
     <child link="j2_b_2_step"/>
@@ -930,11 +930,92 @@
     <limit effort="10" velocity="10" lower="-3.31613" upper="0.174533"/>
   </joint>
   <!-- Joint from hfsb6_6060_750_1_step to dm_j8009p_2_step_1 -->
-  <joint name="r_arm_pitch" type="revolute">
+  <joint name="openarm_joint1" type="revolute">
     <origin xyz="-0 -0.0925 0.689" rpy="-1.5708 0 -0"/>
     <parent link="hfsb6_6060_750_1_step"/>
     <child link="dm_j8009p_2_step_1"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-2.99999" upper="0.999986"/>
   </joint>
+
+  <!-- ros2_control interface for the OpenArm v10 hardware (single right arm, no prefix) -->
+  <ros2_control name="openarm_hardware_interface" type="system">
+    <hardware>
+      <plugin>openarm_hardware/OpenArm_v10HW</plugin>
+      <param name="can_interface">can0</param>
+      <param name="arm_prefix"></param>
+      <param name="hand">false</param>
+      <param name="can_fd">true</param>
+      <param name="kp1">70.0</param>
+      <param name="kp2">70.0</param>
+      <param name="kp3">70.0</param>
+      <param name="kp4">60.0</param>
+      <param name="kp5">10.0</param>
+      <param name="kp6">10.0</param>
+      <param name="kp7">10.0</param>
+      <param name="kd1">2.75</param>
+      <param name="kd2">2.5</param>
+      <param name="kd3">2.0</param>
+      <param name="kd4">2.0</param>
+      <param name="kd5">0.7</param>
+      <param name="kd6">0.6</param>
+      <param name="kd7">0.5</param>
+    </hardware>
+    <joint name="openarm_joint1">
+      <command_interface name="position"/>
+      <command_interface name="velocity"/>
+      <command_interface name="effort"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="effort"><param name="initial_value">0.0</param></state_interface>
+    </joint>
+    <joint name="openarm_joint2">
+      <command_interface name="position"/>
+      <command_interface name="velocity"/>
+      <command_interface name="effort"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="effort"><param name="initial_value">0.0</param></state_interface>
+    </joint>
+    <joint name="openarm_joint3">
+      <command_interface name="position"/>
+      <command_interface name="velocity"/>
+      <command_interface name="effort"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="effort"><param name="initial_value">0.0</param></state_interface>
+    </joint>
+    <joint name="openarm_joint4">
+      <command_interface name="position"/>
+      <command_interface name="velocity"/>
+      <command_interface name="effort"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="effort"><param name="initial_value">0.0</param></state_interface>
+    </joint>
+    <joint name="openarm_joint5">
+      <command_interface name="position"/>
+      <command_interface name="velocity"/>
+      <command_interface name="effort"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="effort"><param name="initial_value">0.0</param></state_interface>
+    </joint>
+    <joint name="openarm_joint6">
+      <command_interface name="position"/>
+      <command_interface name="velocity"/>
+      <command_interface name="effort"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="effort"><param name="initial_value">0.0</param></state_interface>
+    </joint>
+    <joint name="openarm_joint7">
+      <command_interface name="position"/>
+      <command_interface name="velocity"/>
+      <command_interface name="effort"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="effort"><param name="initial_value">0.0</param></state_interface>
+    </joint>
+  </ros2_control>
 </robot>
