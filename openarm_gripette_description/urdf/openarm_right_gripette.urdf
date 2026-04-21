@@ -495,7 +495,7 @@
     <origin xyz="0.0172 -0 -0.0455" rpy="-1.5708 -0 1.5708"/>
     <parent link="j6_a_3_step"/>
     <child link="j7_e_2_step"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 0 -1"/>
     <limit effort="10" velocity="10" lower="-0.785398" upper="0.785398"/>
   </joint>
   <!-- Link dm_j4310_1_2_step_2 -->
@@ -885,7 +885,7 @@
     <origin xyz="0.0205 -0 -0.0343" rpy="0 -1.5708 0"/>
     <parent link="dm_j4310_1_2_step_2"/>
     <child link="gripper_base"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 0 -1"/>
     <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
   </joint>
   <!-- Joint from j6_a_3_step to dm_j4310_1_2_step_2 -->
@@ -893,7 +893,7 @@
     <origin xyz="0.0343 -0 -0.1205" rpy="-1.5708 0 -1.5708"/>
     <parent link="j6_a_3_step"/>
     <child link="dm_j4310_1_2_step_2"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 0 -1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
     <mimic joint="openarm_joint6" multiplier="-1.0"/>
   </joint>
@@ -902,7 +902,7 @@
     <origin xyz="-0 0.0955 0.0315" rpy="1.5708 -0 0"/>
     <parent link="dm_j4310_1_2_step"/>
     <child link="j6_a_3_step"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 0 -1"/>
     <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
   </joint>
   <!-- Joint from dm_j4340_2_step to dm_j4310_1_2_step -->
@@ -910,7 +910,7 @@
     <origin xyz="0 -0.03155 -0.15375" rpy="-1.5708 -0 -0"/>
     <parent link="dm_j4340_2_step"/>
     <child link="dm_j4310_1_2_step"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 0 -1"/>
     <limit effort="10" velocity="10" lower="-2.44346" upper="0"/>
   </joint>
   <!-- Joint from j2_b_2_step to dm_j4340_2_step -->
@@ -918,7 +918,7 @@
     <origin xyz="-0 -0.06625 0.0301" rpy="-1.5708 -1.5708 0"/>
     <parent link="j2_b_2_step"/>
     <child link="dm_j4340_2_step"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 0 -1"/>
     <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
   </joint>
   <!-- Joint from dm_j8009p_2_step_1 to j2_b_2_step -->
@@ -926,7 +926,7 @@
     <origin xyz="-0.0301 0 -0.06" rpy="-3.14159 -1.5708 0"/>
     <parent link="dm_j8009p_2_step_1"/>
     <child link="j2_b_2_step"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 0 -1"/>
     <limit effort="10" velocity="10" lower="-3.31613" upper="0.174533"/>
   </joint>
   <!-- Joint from hfsb6_6060_750_1_step to dm_j8009p_2_step_1 -->
@@ -934,7 +934,7 @@
     <origin xyz="-0 -0.0925 0.689" rpy="-1.5708 0 -0"/>
     <parent link="hfsb6_6060_750_1_step"/>
     <child link="dm_j8009p_2_step_1"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 0 -1"/>
     <limit effort="10" velocity="10" lower="-2.99999" upper="0.999986"/>
   </joint>
 
